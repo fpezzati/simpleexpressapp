@@ -1,0 +1,20 @@
+{
+  "name": "simpleexpressapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "node_modules/.bin/tape test/**/*.test.js | faucet",
+    "testdebug": "node_modules/.bin/tape test/**/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^5.1.0"
+  }
+}
