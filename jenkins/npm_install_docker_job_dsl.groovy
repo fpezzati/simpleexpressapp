@@ -15,7 +15,7 @@ job('simpleexpressapp dummy builder with docker') {
   steps {
     dockerBuildAndPublish {
       repositoryName('fpezzati/simpleexpressapp')
-      tag('{GIT_REVISION, length=9}')
+      tag('${GIT_REVISION, length=9}')
       registryCredentials('dockerhub')
       forcePull(false)
       forceTag(false)
